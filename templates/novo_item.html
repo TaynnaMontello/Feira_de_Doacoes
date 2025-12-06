@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Cadastrar Novo Item</h2>
+
+<h2>Novo Item</h2>
+
+<form method="POST">
+
+    <label>Nome do item:</label>
+    <input type="text" name="nome" required>
+
+    <label>Descrição:</label>
+    <textarea name="descricao" required></textarea>
+
+    <label>Tipo:</label>
+    <select name="tipo" required>
+        <option value="troca">Troca</option>
+        <option value="doacao">Doação</option>
+    </select>
+
+    <button type="submit">Cadastrar</button>
+
+</form>
+
+
+{% endblock %}

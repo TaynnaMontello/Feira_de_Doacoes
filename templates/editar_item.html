@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Editar Item</h2>
+
+<form method="POST">
+
+    <label>Nome:</label>
+    <input type="text" name="nome" value="{{ item.nome }}" required>
+
+    <label>Descrição:</label>
+    <textarea name="descricao" required>{{ item.descricao }}</textarea>
+
+    <label>Tipo:</label>
+    <select name="tipo">
+        <option value="troca" {% if item.tipo == "troca" %}selected{% endif %}>Troca</option>
+        <option value="doacao" {% if item.tipo == "doacao" %}selected{% endif %}>Doação</option>
+    </select>
+
+    <button type="submit">Salvar</button>
+</form>
+
+{% endblock %}

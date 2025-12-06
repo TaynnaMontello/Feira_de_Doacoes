@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Itens Disponíveis</h2>
+
+<div class="lista">
+    {% for item in itens %}
+    <div class="card">
+        <div class="info">
+            <p><strong>{{ item.nome }}</strong> - {{ item.descricao }}</p>
+            <p><strong>Tipo:</strong> {{ "Troca" if item.tipo == "troca" else "Doação" }} | <strong>Dono:</strong> {{ item.dono.nome }}</p>
+        </div>
+        <div class="acoes">
+            {% if usuario == item.dono_id %}
+                <a href="{{ url_for('item.editar_item', id=item.id) }}" class="btn">Editar</a>
+                <a href="{{ url_for('item.excluir_item', id=item.id) }}" class="btn">Excluir</a>
+            {% else %}
+                {% if item.tipo == "troca" %}
+                    <a href="{{ url_for('item.trocar', id=item.id) }}" class="btn">Quero trocar</a>
+                {% else %}
+                    <a href="{{ url_for('item.doar', id=item.id) }}" class="btn">Quero receber</a>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

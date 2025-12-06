@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #333;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    background: #4CAF50;
+    padding: 20px;
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+.sidebar .logo {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 12px 10px;
+    margin: 8px 0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.2s;
+    font-size: 16px;
+}
+
+.sidebar nav a:hover {
+    background: #45a049;
+}
+
+.content {
+    margin-left: 230px;
+    padding: 25px;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+}
+
+.hero-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: 580px;     
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p.titulo_especial{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button, .btn {
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover, .btn:hover {
+    background: #45a049;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.card .info p {
+    margin: 5px 0;
+}
+
+.acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .content {
+        margin-left: 190px;
+    }
+
+    .hero-image {
+        height: 150px;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .acoes {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

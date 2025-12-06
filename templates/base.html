@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title if title else "Feira de Trocas" }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <h2 class="logo">Feira</h2>
+        <nav>
+            <a href="{{ url_for('index') }}">🏠 Início</a>
+            <a href="{{ url_for('item.listar_itens') }}">📦 Itens</a>
+            <a href="{{ url_for('item.novo_item') }}">➕ Novo Item</a>
+
+            {% if session.get('usuario') %}
+                <!-- Usuário logado -->
+                <a href="{{ url_for('user.perfil') }}">👤 Perfil</a>
+
+                <form method="post" action="{{ url_for('auth.logout') }}" style="margin: 8px 0;">
+                    <button type="submit" class="logout-btn" 
+                            style="background: none; border: none; color: white; cursor: pointer; font-size: 1em; padding: 0;">
+                        🚪 Sair
+                    </button>
+                </form>
+
+            {% else %}
+                <!-- Usuário NÃO logado -->
+                <a href="{{ url_for('auth.login') }}">🔐 Login</a>
+                <a href="{{ url_for('auth.cadastro') }}">📝 Cadastro</a>
+            {% endif %}
+        </nav>
+    </aside>
+
+    <main class="content">
+        <div class="container">
+            {% if title == "Início" %}
+            <div class="home-banner">
+                <h1 class="hero-title">Bem-vindo à Feira de Trocas e Doações!</h1>
+                <p class="titulo_especial">Encontre itens, troque com outras pessoas e contribua para um consumo mais consciente.</p>
+            </div>
+            {% endif %}
+
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+</body>
+</html>

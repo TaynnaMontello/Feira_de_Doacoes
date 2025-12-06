@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Solicitar Doação</h2>
+
+<p>Você está solicitando doação pelo item:</p>
+
+<h3>{{ item.nome }}</h3>
+<p>{{ item.descricao }}</p>
+<p><strong>Dono:</strong> {{ item.dono.nome }}</p>
+
+<a href="{{ url_for('item.solicitar_troca', item_id=item.id) }}" 
+   class="btn btn-primary">
+    Solicitar Doação
+</a>
+{% endblock %}

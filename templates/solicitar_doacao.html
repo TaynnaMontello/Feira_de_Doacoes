@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Entre em contato</h2>
+
+<p>Você deseja trocar/receber o item:</p>
+
+<h3>{{ item['nome'] }}</h3>
+<p>{{ item['descricao'] }}</p>
+<p><strong>Dono:</strong> {{ dono['nome'] }}</p>
+<p><strong>Email:</strong> {{ dono['email'] }}</p>
+<p><strong>Telefone:</strong> {{ dono['telefone'] }}</p>
+
+<p>Entre em contato com o dono para combinar!</p>
+
+{% endblock %}

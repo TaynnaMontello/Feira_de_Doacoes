@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Perfil{% endblock %}
+
+{% block content %}
+<h2>Perfil</h2>
+
+{% if usuario %}
+  <p>Olá, <strong>{{ usuario.nome }}</strong>!</p>
+
+  <div class="perfil-acoes">
+    <a href="{{ url_for('item.listar_itens') }}">Ver itens</a> |
+    <a href="{{ url_for('item.novo_item') }}">Cadastrar novo item</a>
+  </div>
+
+  <form method="post" action="{{ url_for('auth.logout') }}">
+    <button type="submit" class="logout-btn">Sair</button>
+</form>
+
+{% else %}
+  <p>Você não está logada. <a href="{{ url_for('auth.login') }}">Faça login</a></p>
+{% endif %}
+
+{% endblock %}

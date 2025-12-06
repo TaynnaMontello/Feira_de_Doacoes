@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Excluir Item</h2>
+
+<p>Tem certeza que deseja excluir <strong>{{ item.nome }}</strong>?</p>
+
+<form method="post">
+    <button type="submit">Sim, excluir</button>
+</form>
+{% endblock %}

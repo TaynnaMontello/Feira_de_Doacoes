@@ -26,10 +26,10 @@ A nossa aplicação contribui ao:
 - Evitar desperdício, estimulando o reaproveitamento.
 
 *_Outras soluções possíveis (até não digitais)_*
-> Um mural físico na escola com fotos dos itens;
-> Uma caixa de coleta de doações em sala;
-> Grupos de WhatsApp, embora fiquem desorganizados rapidamente;
-> Feiras presenciais de troca.
+> Um mural físico na escola com fotos dos itens;  
+> Uma caixa de coleta de doações em sala;  
+> Grupos de WhatsApp, embora fiquem desorganizados rapidamente;  
+> Feiras presenciais de troca.  
 
 ### Mesmo assim, o sistema web consegue organizar melhor as informações e permitir que mais pessoas participem.
 
@@ -71,4 +71,5 @@ Também aprendi que desenvolver algo útil envolve:
 > Organização
 > Colaboração
 > Responsabilidade social.
+
 

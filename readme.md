@@ -41,16 +41,17 @@ _(O objetivo principal é facilitar a organização de uma feira onde pessoas po
   **O SQLite será criado automaticamente na primeira execução.**.  
 
 Se quiser criar manualmente: (python).  
-  >>> from app import db.  
-  >>> db.create_all().  
-  >>> exit().  
+  >> from app import db.  
+  >> db.create_all().  
+  >> exit().  
 
 5. Rodar a aplicação
   python app.py.  
 
 _outras opções:_.  
-  > 👉 http://127.0.0.1:5000.  
-  > 👉 ou http://localhost:5000.  
+  > 👉 http://127.0.0.1:5000.
+ou 
+  > 👉 http://localhost:5000.  
 
 ## 📚 Estrutura do Projeto
 /projeto_feira_de_doações.  
@@ -73,12 +74,12 @@ _outras opções:_.
 
 ## 👤 Funcionalidades de Usuário.  
 🔐 Cadastro e Login.  
-Criação de conta com nome, email, senha e telefone..  
+Criação de conta com nome, email, senha e telefone.  
 
-(Senha armazenada com hash.).  
+(Senha armazenada com hash.)  
 
 🧺 Itens.  
-Cadastrar item com nome, descrição e tipo (troca ou doação)..  
+Cadastrar item com nome, descrição e tipo (troca ou doação).  
 Listar itens disponíveis..  
 Excluir e editar apenas seus próprios itens..  
 Solicitar troca/doação de itens de outros usuários..  
@@ -94,6 +95,7 @@ Este projeto foi desenvolvido como atividade para a disciplina de Programação 
 3. Usar banco de dados com SQLAlchemy
 4. Trabalhar rotas e templates
 5. Criar um CRUD simples
+
 
 
 

@@ -3,14 +3,14 @@ O Sistema de Doações e Trocas é uma aplicação web desenvolvida com Flask qu
 para doação ou troca, visualizem itens disponíveis, solicitem um item, além de manter um perfil simples de usuário.
 
 ## O sistema possui:
-🧍 Cadastro e login de usuários (com senha criptografada)
-📦 Cadastro de itens (troca ou doação)
-🔄 Solicitação de troca
-🎁 Solicitação de doação
-✏️ Edição e exclusão dos próprios itens
-👀 Visualização dos itens de outras pessoas
-🧩 Controle de login com sessão
-🗄 Integração completa com SQLite + SQLAlchemy
+> 🧍 Cadastro e login de usuários (com senha criptografada)
+> 📦 Cadastro de itens (troca ou doação)
+> 🔄 Solicitação de troca
+> 🎁 Solicitação de doação
+> ✏️ Edição e exclusão dos próprios itens
+> 👀 Visualização dos itens de outras pessoas
+> 🧩 Controle de login com sessão
+> 🗄 Integração completa com SQLite + SQLAlchemy
 
 _(O objetivo principal é facilitar a organização de uma feira onde pessoas possam doar ou trocar objetos que não usam mais.)_
 
@@ -94,3 +94,4 @@ Este projeto foi desenvolvido como atividade para a disciplina de Programação 
 3. Usar banco de dados com SQLAlchemy
 4. Trabalhar rotas e templates
 5. Criar um CRUD simples
+

@@ -34,7 +34,7 @@ A nossa aplicação contribui ao:
 ### Mesmo assim, o sistema web consegue organizar melhor as informações e permitir que mais pessoas participem.
 
 # Limites da solução
-Apesar dos benefícios, o sistema também tem limites importantes:
+Apesar dos benefícios, o sistema também tem limites importantes:  
   Não resolve a falta de internet: pessoas sem acesso à rede podem ficar de fora.  
   Dificuldades de uso: usuários com pouca familiaridade digital podem ter problemas ao navegar.  
   Acessibilidade: pessoas com deficiência visual ou limitações motoras podem precisar de adaptações.  
@@ -71,5 +71,6 @@ Também aprendi que desenvolver algo útil envolve:
 > Organização
 > Colaboração
 > Responsabilidade social.
+
 
 

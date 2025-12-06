@@ -10,7 +10,7 @@ Os mais afetados são:
 - Quem deseja trocar objetos mas não encontra alguém com o item desejado.
 - A falta de um espaço organizado para essa interação faz com que oportunidades de solidariedade sejam perdidas.
 
-#Por que um sistema web?
+# Por que um sistema web?
 Um sistema web foi escolhido porque:
 
 1. Pode ser acessado por qualquer dispositivo (celular, computador, tablet);
@@ -71,3 +71,4 @@ Também aprendi que desenvolver algo útil envolve:
 > Organização
 > Colaboração
 > Responsabilidade social.
+
